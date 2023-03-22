@@ -23,16 +23,15 @@
 }
 
 .dark {
-  --clr-bg: rgb(95,9,144);
-  --clr-bg: linear-gradient(90deg, rgba(95,9,144,1) 40%, rgba(153,113,176,1) 93%);
-  --clr-bg-alt: linear-gradient(90deg, rgba(95,9,144,1) 40%, rgba(153,113,176,1) 93%);
+  --clr-bg: black;
+  --clr-bg-alt: rgb(20, 20, 20);
 
   --clr-txt: #eeeeee;
-  --clr-primary: #cc4866;
+  --clr-primary: purple;
   --clr-border: #eeeeee7c;
   --clr-nav: #272f2b;
-  --shadow: rgba(0, 0, 0, 0.558) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --shadow: purple 0px 10px 36px 0px,
+    rgba(252, 248, 248, 0.06) 0px 0px 0px 1px;
 }
 
 main {
