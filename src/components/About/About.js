@@ -1,15 +1,21 @@
-import React from "react";
+import React,{useContext} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/homeicons.svg";
+import laptopImglight from "../../Assets/homeiconslight.svg";
 import Toolstack from "./Toolstack";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import { ThemeContext } from "../../Context/theme";
+
 
 import "./about.css";
 
 function About() {
+const [{ themename}] = useContext(ThemeContext);
+
+
   return (
     <Container fluid className="about-section">
       <Container>
@@ -39,7 +45,8 @@ function About() {
           >
             <div class="img-controls">
             <img
-              src={laptopImg}
+                src={themename === "light" ? laptopImglight:laptopImg}
+              
               alt="about"
               className="img-fluid"
               data-aos="fade-left"

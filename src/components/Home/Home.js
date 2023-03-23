@@ -1,7 +1,9 @@
-import React from "react";
+import React,{useContext} from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeIcon from "../../Assets/homeicons.svg";
+import homeIcon from "../../Assets/about.png";
+import homeIconsLight from "../../Assets/aboutlight.png";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import { ThemeContext } from "../../Context/theme";
 
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -11,6 +13,8 @@ import Projects from "../Projects/Projects";
 import ResumeNew from "../Resume/ResumeNew";
 
 function Home() {
+const [{ themename}] = useContext(ThemeContext);
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -34,13 +38,13 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-             <div class="img-controls">
+            <Col md={5} style={{ paddingBottom: 0 }}>
+             <div class="img-controlss">
              <img
-                src={homeIcon}
+                src={themename === "light" ? homeIconsLight:homeIcon}
                 alt="home pic"
                 className="img-fluid"
-                style={{ paddingTop: 50 }}
+                style={{ paddingTop: 100 }}
               />
               </div> 
             </Col>

@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row,Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Container, Row,Col, Card } from "react-bootstrap";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "./resume.css";
 import {
@@ -13,8 +10,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
+import { ContactUs } from "./contact";
 
 
 function ResumeNew() {
@@ -27,13 +23,20 @@ function ResumeNew() {
   return (
     <div class="contact">
       <Container>
+      <h1 data-aos="fade-right">
+              <span className="primary-header"><b>CONTACT</b></span> ME<br/><br/>
+            </h1>
       <Row>
+       <div class="contact-form">
+       <Card className="project-card-view">
+        <Card.Body>
         
           <Col md={12} className="home-about-social" style={{backgroundColor:"var(--clr-bg)"}}>
-            <h1 data-aos="fade-right">
-              <span className="primary-header">CONTACT</span> ME
-            </h1>
-            <p data-aos="fade-left">Connect with me on</p>
+          
+            <ContactUs/>
+            <br></br>
+            
+            <i data-aos="fade-left">Feel free to connect with me on</i><br/><br/>
             <ul className="home-about-social-links" data-aos="fade-up">
               <li className="social-icons">
                 <a
@@ -59,7 +62,7 @@ function ResumeNew() {
               </li>
               <li className="social-icons">
                 <a
-                  href="mailto:rohankarn35@gmail.com"
+                  href="mailto:contact@rohankarn.com.np"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -92,6 +95,9 @@ function ResumeNew() {
               </li>
             </ul>
           </Col>
+          </Card.Body>
+          </Card>
+       </div>
         </Row>
         
         <br/>

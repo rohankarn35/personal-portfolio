@@ -18,6 +18,7 @@
   --clr-border: #919090;
 
   --clr-nav: #fefefe;
+  --clr-git:#052034;
 
   --shadow: rgb(100, 100, 111) 0px 7px 29px 0px;
 }
@@ -30,6 +31,8 @@
   --clr-primary: purple;
   --clr-border: #eeeeee7c;
   --clr-nav: #272f2b;
+  --clr-git:purple;
+
   --shadow: purple 0px 10px 36px 0px,
     rgba(252, 248, 248, 0.06) 0px 0px 0px 1px;
 }

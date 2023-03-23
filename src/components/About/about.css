@@ -1,7 +1,7 @@
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-top: 50px !important;
+  padding-bottom: 10px !important;
   background-color: var(--clr-bg) !important;
 }
 
@@ -24,6 +24,7 @@
   background: transparent !important;
   border: none !important;
   box-shadow: var(--shadow);
+  /* margin-right: -20px; */
 }
 .gitContainer {
   padding: 15px;
@@ -35,7 +36,7 @@
   display: flex;
   justify-content: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .tech-icons {
     margin: 10px !important;
   }
@@ -69,11 +70,15 @@
 
 .img-controls{
   animation-name: img-control;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   /* margin-bottom: 50px; */
-  margin-top: -70px;
+   /* margin-top: -100px; */
+   margin-right: 10px;
+   margin-left: 90px;
+  /* width: 85%; */
+  width: 100%;
   
 }
 @keyframes img-control {
@@ -81,4 +86,21 @@
   50%  { transform: translate(0, 15px); }
   100%   { transform: translate(0, -0px); }
   
+}
+@media(max-width:990px){
+  .img-controls{
+   /* margin-top: -100px; */
+   width: 120%;
+
+  }
+}
+@media(max-width:768px){
+  .img-controls{
+   margin-top: -40px;
+   width: 100%;
+   margin-right: 0px;
+   margin-left: 0px;
+   
+
+  }
 }
