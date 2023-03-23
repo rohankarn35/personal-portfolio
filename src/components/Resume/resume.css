@@ -59,5 +59,24 @@ textarea {
   background-color: var(--clr-primary);
   color: var(--clr-nav);
 }
+@media (max-width:767px){
+
+input{
+  position: relative;
+  justify-content: center;
+  margin-right: 100px;
+  width: 90%;
+
+  
+}
+textarea{
+  position: relative;
+  justify-content: center;
+  margin-right: 0px;
+  width: 90%;
+
+}
+
+}
 
 
