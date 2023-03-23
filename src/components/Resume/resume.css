@@ -20,7 +20,7 @@ input, textarea {
 
   font-size: 12px;
   font-weight: 500;
-  border: none;
+  border: 2px solid var(--clr-primary) ;
   box-shadow: none;
   border-radius: 5px;
   outline-color: #9e9e9e;
@@ -47,7 +47,7 @@ textarea {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--clr-txt);
   background: var(--clr-bg);
   padding: 12px 20px;
   border-radius: 5px;
@@ -57,7 +57,7 @@ textarea {
 }
 .main-gradient-button:hover{
   background-color: var(--clr-primary);
-  color: black;
+  color: var(--clr-nav);
 }
 
 
