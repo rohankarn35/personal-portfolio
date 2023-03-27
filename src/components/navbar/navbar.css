@@ -38,8 +38,8 @@
 
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out !important;
-  transition: transform 0.35s ease-in-out !important;
+  transition: transform 0.3s ease-in-out !important;
+  transition: transform 0.3s ease-in-out !important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
@@ -47,7 +47,7 @@
   left: 12px !important;
   top: 10px !important;
   transform: rotate(135deg) !important;
-  opacity: 0.9 !important;
+  opacity: 0.4 !important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
@@ -117,7 +117,7 @@
 
 .navbar-nav .nav-item a {
   font-weight: 400;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
   position: relative;
   z-index: 1;
 }
