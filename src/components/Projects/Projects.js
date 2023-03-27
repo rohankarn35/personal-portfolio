@@ -4,7 +4,7 @@ import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import ProjectCard from "./ProjectCards";
 
 import PrivateChat from "../../Assets/Projects/PrivateChat.png";
-import Portfolio from "../../Assets/Projects/Portfolio.png";
+import AskMeAI from "../../Assets/Projects/askme.jpg";
 import Ecart from "../../Assets/Projects/ecart.png";
 
 import "./project.css";
@@ -31,7 +31,7 @@ function Projects() {
 
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={Portfolio}
+              imgPath={AskMeAI}
               title="AskMe AI Chat"
               description="The AI chat application developed by using flutter framework."
               ghLink="https://github.com/rohankarn35/AskMeAI.git"
